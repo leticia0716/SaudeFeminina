@@ -78,19 +78,12 @@ export default function Formulario(props){
             label="Nome:"
             value={nomeSolicitante}
             onChangeText={nomeSolicitante => setNomeSolicitante(nomeSolicitante)}/>
-        
- 
-        <Button
-            title={solicitante} 
-            style={estilos.text}
-        />
-
+  
+      
         <Text style={estilos.text}> TIPO DE ABUSO </Text>
 
         <Checkbox options = {opcoes} onChange={op=> setAgressoes(op)}></Checkbox>
-        <Button
-            title={agressoesRegistradas.toString()} 
-        />
+       
 
         <Text style={estilos.text}> DADOS DA DENÚNCIA</Text>
 
@@ -121,7 +114,7 @@ export default function Formulario(props){
         <Pressable 
             style={estilos.naoSelectionado} onPress={()=> Alert.alert(nomeSolicitante +', sua denuncia será enviada para análise' )}
         >
-            <Text>SALVAR</Text>
+            <Text style = {estilos.text}>SALVAR</Text>
         </Pressable>
 
         <Text  style={estilos.text}>DENÚNCIAS REALIZADAS</Text>
