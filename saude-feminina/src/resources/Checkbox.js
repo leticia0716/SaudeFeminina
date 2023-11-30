@@ -28,13 +28,7 @@ export default function Checkbox({options = [], onChange}){
             ))}
 
         </View>
-
-        
-
-        
-    );
-
-    
+    );   
 }
 
 
