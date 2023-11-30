@@ -85,11 +85,6 @@ export default function Formulario(props){
             style={estilos.text}
         />
 
-        <Button
-            title={nomeSolicitante} 
-            style={estilos.text}
-        />
-
         <Text style={estilos.text}> TIPO DE ABUSO </Text>
 
         <Checkbox options = {opcoes} onChange={op=> setAgressoes(op)}></Checkbox>
