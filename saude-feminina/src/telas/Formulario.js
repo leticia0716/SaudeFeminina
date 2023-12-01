@@ -107,9 +107,10 @@ export default function Formulario(props){
         )     
 
         }
-        <Button
-            title={dataHora} 
-        />
+        
+        <Pressable style={estilos.naoSelectionado}>
+            <Text style={estilos.text}>{dataHora}</Text>
+        </Pressable>
 
         <Pressable 
             style={estilos.naoSelectionado} onPress={()=> Alert.alert(nomeSolicitante +', sua denuncia será enviada para análise' )}
